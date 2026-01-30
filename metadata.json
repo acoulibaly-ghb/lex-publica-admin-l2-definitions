@@ -1,0 +1,5 @@
+{
+  "name": "Puzzle de Phrases IA",
+  "description": "Une application éducative interactive où l'IA extrait des concepts clés de vos cours PDF pour créer des puzzles de phrases à remettre en ordre.",
+  "requestFramePermissions": []
+}
