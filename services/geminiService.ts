@@ -7,7 +7,8 @@ export const generatePuzzle = async (
   difficulty: Difficulty, 
   specificConcept?: string
 ): Promise<PuzzleData> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  // On utilise import.meta.env pour Vite et on ajoute le préfixe VITE_
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
   
   const difficultyPrompts = {
     'Facile': "Choisis une définition simple et courte. Découpe-la en 3 à 5 segments courts.",
